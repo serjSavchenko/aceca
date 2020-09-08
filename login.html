@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Запчасти на бензо-элeктроинструмент АСЕСА</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="images/site_icon.png" type="image/png" />
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	<link rel="stylesheet" href="assets/css/login_input.css">
+	<link rel="stylesheet" href="assets/css/lightbox.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="assets/js/lightbox.js"></script>
+	
+
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+  		$('#accordeon .acc-head').on('click', f_acc);
+		});
+
+		function f_acc(){
+			$('#accordeon .acc-body').not($(this).next()).slideUp(500);
+			// $('#accordeon .acc-body').not($(this).next()).css('content','\02795');
+			$(this).next().slideToggle(1000);
+			$(this).toggleClass('activate');
+	}
+	</script>
+
+</head>
+<body>
+			<!--Header-->
+			<header id="header">
+				<div class="contacts"> Телефон: <strong>+38(063)755-89-98 (Виталий) +38(093)805-30-05 (Алексей)</strong></div>
+				<a class="logo" href="index.html">Запчасти на бензо-элeктроинструмент</a>
+			</header>
+
+			<!--BG-->
+			<a href="index.html"><div id="heading"></div></a>
+
+			<section id="main" class="wrapper">
+				<div class="innermain_login">
+						<div class="navigation_panel_cab">
+							<div class="about_acc">
+								<img src="images/user-account-box.svg" alt="your_acc">
+								<p><b>Логин:</b> Pirat <br>
+								<b>ID аккаунта:</b> 888</p>
+							</div>
+							<div class="item" onClick="about_acc(this)">
+								<a href="#">Об аккаунте</a>
+							</div>
+							<div class="item" onClick="buyed_goods(this)">
+								<a href="#">Мои покупки</a>
+							</div>
+							<div class="item" onClick="change_data(this)">
+								<a href="#">Сменить данные</a>
+							</div>
+							<div class="item" onClick="exit(this)" style="box-shadow: 0 11px 22px rgba(21, 33, 117, 0.2), 0 7px 7px rgba(21, 34, 117, 0.24);">
+								<a href="#">Выход</a>
+							</div>
+						</div>
+
+						<div class="container_info" id="container_info" style="padding: 5% 10% 6% 10%;">
+							<img src='images/user-account-box.svg' alt='your_acc'> 
+							<p id='overimg_text'>Мои данные</p> 
+							<p>
+								<b>Логин:</b> Pirat <br>
+							  <b>Имя:</b> Pirat <br>
+								<b>ID аккаунта:</b> 888 <br>
+								<b>Email:</b> example@mail.com <br>
+							  <b>Телефон:</b> +38(066)666-66-66 <br>
+							  <b>Адрес:</b> Pirat st. 43 <br> 
+								<b>Почтовый индекс:</b> 61234
+							</p> 
+							<a href='#' onClick='change_data(this)' class='action-button animate blue'>Смена данных</a>
+						</div>
+
+				</div>
+				<script>
+					var d = document;
+					function about_acc(a) {
+							d.getElementById("container_info").innerHTML = "<img src='images/user-account-box.svg' alt='your_acc'> <p id='overimg_text'>Мои данные</p> <p><b>Логин:</b> Pirat <br> <b>Имя:</b> Pirat <br> <b>ID аккаунта:</b> 888 <br> <b>Email:</b> example@mail.com <br> <b>Телефон:</b> +38(066)666-66-66 <br> <b>Адрес:</b> Pirat st. 43 <br> <b>Почтовый индекс:</b> Pirat st. 43</p> <a href='#' onClick='change_data(this)' class='action-button animate blue'>Смена данных</a>";
+					  	d.getElementById("container_info").style.cssText = "padding: 5% 15% 6% 15%;";
+					}
+					function buyed_goods(a) {
+							d.getElementById("container_info").innerHTML = "<img src='images/full-shoping-cart.svg' alt='your_acc'> <p id='overimg_text'><b>Мои покупки</b></p> <div class='table-wrapper-goods'><table><thead><tr><th>Товар</th><th>Название</th><th>Цена</th></tr></thead><tbody><tr><td><a href='images/1.jpg' data-lightbox='image-1' data-title='Text'><img src='images/1.jpg' alt='goods_1'></a></td><td>Ante turpis integer aliquet porttitor.</td><td>10.00₴</td></tr><tr><td><a href='images/2.jpg' data-lightbox='image-2' data-title='Text'><img src='images/2.jpg' alt='goods_2'></a></td><td>Vis ac commodo adipiscing arcu aliquet.</td><td>20.00₴</td></tr><tr><td><a href='images/3.jpg' data-lightbox='image-3' data-title='Text'><img src='images/3.jpg' alt='goods_3'></a></td><td>Morbi faucibus arcu accumsan lorem.</td><td>30.00₴</td></tr><tr><td><a href='images/4.jpg' data-lightbox='image-4' data-title='Text'><img src='images/4.jpg' alt='goods_4'></a></td><td>Vitae integer tempus condimentum.</td><td>40.00₴</td></tr><tr><td><a href='images/5.jpg' data-lightbox='image-5' data-title='Text'><img src='images/5.jpg' alt='goods_5'></a></td><td>Ante turpis integer aliquet porttitor.</td><td>50.00₴</td></tbody><tfoot><tr><td colspan='2'></td><td>360.00₴</td></tr></tfoot></table></div>";
+							d.getElementById("container_info").style.cssText = "padding: 5% 5% 6% 5%;";
+					}
+					function change_data(a) {
+							d.getElementById("container_info").innerHTML = "<img src='images/refresh-page-option.svg' alt='your_acc'> <p id='overimg_text'>Смена данных</p><form><div class='group'>      <input type='text' required><span class='bar'></span><label>Логин</label></div><div class='group'>      <input type='text' required><span class='bar'></span><label>Имя</label></div><div class='group'>      <input type='text' required><span class='bar'></span><label>Email</label></div><div class='group'>      <input type='text' required><span class='bar'></span><label>Телефон</label></div><div class='group'>      <input type='text' required><span class='bar'></span><label>Адрес</label></div><div class='group'>      <input type='text' required><span class='bar'></span><label>Почтовый индекс</label></div><p id='overimg_text' style='font-size: 20px;'>Ввод всех полей не обязателен!</p><div class='group'>      <input type='password' required><span class='bar'></span><label>Пароль от аккаунта</label></div></form><a href='#' class='action-button animate blue'>Подтвердить</a>";
+							d.getElementById("container_info").style.cssText = "padding: 5% 10% 6% 10%;";
+					}
+					function exit(a) {
+							
+					}
+				</script>
+			</section>
+
+
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Кто мы такие?</h3>
+							<p>"АСЕСА" - это молодая, но быстроразвивающаяся компания. Мы занимаемся поставками запчастей к электроинструменту, бензоинструменту, расходных материалов. Мы работаем со всеми населенными пунктами Украины, и ближнего зарубежья, откуда бы Вы к нам не обратились. Будем рады сотрудничать с теми кто желает заработать.</p>
+						</section>
+						<section>
+							<h3>Контакты</h3>
+							<p><b>Адрес:</b> Харьков, ТЦ Барабашово, ряд 21-01-272</p>
+							<p><b>Телефон:</b> +38(063)755-89-98 (Виталий) +38(093)805-30-05 (Алексей)</p>
+							<p><b>EMail:</b> aceca@mail.ua</p>
+						</section>
+						<section>
+							<h3>Мы в соцсетях</h3>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Designed by <a href="https://unsplash.co">Sergey Savchenko</a>, and <a href="https://coverr.co">Eugen Batulin</a>.
+					</div>
+				</div>
+			</footer>
+
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/slick/slick.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<a href="#" class="scrollup">Наверх</a>
+
+</body>
+</html>
